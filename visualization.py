@@ -10,12 +10,16 @@ def plot_convergence(cs_history, ga_history=None):
     sns.set_theme(style="darkgrid")
     plt.figure(figsize=(10, 6))
     
-    # TODO: Dùng plt.plot để vẽ đường cho Clonal Selection
+    # Dùng seaborn để vẽ đường cho Clonal Selection
+    sns.lineplot(data=cs_history, label="Clonal Selection (Hệ miễn dịch)", color="blue", linewidth=2.5)
     
-    # TODO: Dùng plt.plot để vẽ đường cho Genetic Algorithm (Nếu có)
+    # Dùng seaborn để vẽ đường cho Genetic Algorithm
+    if ga_history is not None:
+        sns.lineplot(data=ga_history, label="Genetic Algorithm (Di truyền)", color="orange", linewidth=2.5, linestyle="--")
     
-    plt.title("So sánh sự hội tụ: Clonal Selection vs Genetic Algorithm", fontsize=14)
-    plt.xlabel("Thế hệ (Generations)", fontsize=12)
-    plt.ylabel("Độ thích nghi (Fitness - Càng thấp càng tốt)", fontsize=12)
-    plt.legend()
+    plt.title("So sánh tốc độ tìm nghiệm: Clonal Selection vs Genetic Algorithm", fontsize=15, fontweight="bold")
+    plt.xlabel("Thế hệ tiến hóa (Generations)", fontsize=12)
+    plt.ylabel("Giá trị hàm mục tiêu (Fitness - Càng gần 0 càng tốt)", fontsize=12)
+    plt.legend(fontsize=12)
+    plt.tight_layout()
     plt.show()

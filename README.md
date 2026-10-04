@@ -13,7 +13,17 @@
 ## 📝 Giới thiệu đề tài
 Đề tài áp dụng **Thuật toán lựa chọn dòng vô tính (Clonal Selection Algorithm)** để giải quyết bài toán tối ưu hóa (tìm Min/Max) trên các hàm chuẩn (benchmark functions) như hàm **Sphere** và **Rastrigin**.
 
-Mục tiêu là mô phỏng lại cách hoạt động của hệ miễn dịch nhân tạo (Artificial Immune System) thông qua quá trình lựa chọn, nhân bản và đột biến các kháng thể.
+### 💡 Ý tưởng cốt lõi (Lấy cảm hứng từ đâu?)
+Thuật toán bắt chước cách cơ thể con người phản ứng khi bị nhiễm bệnh:
+* Khi có virus (Bài toán khó) xâm nhập, cơ thể tạo ra rất nhiều **Kháng thể** (Các phương án giải quyết ngẫu nhiên). 
+* Cơ thể sẽ đánh giá xem kháng thể nào diệt virus tốt nhất (Độ thích nghi/Fitness cao). 
+* Kháng thể tốt đó sẽ được giữ lại, **nhân bản (Cloning)** ra rất nhiều bản sao. Trong quá trình nhân bản, có xảy ra sự **đột biến (Mutation)** ngẫu nhiên để dò dẫm, tạo ra các thế hệ kháng thể sau xịn hơn thế hệ trước.
+
+### ⚙️ Áp dụng vào Máy tính (Tối ưu hóa Toán học)
+Trong máy tính, chúng ta không có virus thật, mà thay vào đó là **Bài toán Tối ưu hóa**.
+* Bạn hãy tưởng tượng mình đang đứng trên một dãy núi khổng lồ, sương mù mù mịt. Nhiệm vụ của bạn là phải tìm ra **thung lũng thấp nhất** (Giá trị Min của hàm số toán học Sphere hoặc Rastrigin).
+* Thuật toán sẽ thả ngẫu nhiên 100 người lính (100 kháng thể) xuống dãy núi. Nó sẽ chọn ra những người đang đứng ở vị trí thấp nhất, nhân bản họ lên, và cho họ bước ngẫu nhiên (đột biến) để dò đường tiếp. 
+* Cứ lặp đi lặp lại 100-500 vòng lặp (Thế hệ/Generations), đội quân của bạn chắc chắn sẽ "đổ dồn" về đúng cái đáy thấp nhất của dãy núi.
 
 ## 🚀 Các công cụ sử dụng
 - **Ngôn ngữ:** Python
