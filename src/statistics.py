@@ -13,7 +13,7 @@ def run_cs_once(benchmark_func, pop_size=100, iterations=200, dim=5, bounds=(-5.
     
     for _ in range(iterations):
         clones, clone_fitnesses = cs.clone(population, fitness, clone_rate=0.5)
-        mutated_clones = cs.mutate(clones, clone_fitnesses, mutation_rate=0.5, bounds=bounds)
+        mutated_clones = cs.mutate(clones, clone_fitnesses, mutation_rate=3.0, bounds=bounds)
         mutated_fitnesses = cs.evaluate_fitness(mutated_clones, benchmark_func)
         population, fitness = cs.select(population, fitness, mutated_clones, mutated_fitnesses, pop_size)
         population = cs.receptor_editing(population, fitness, edit_rate=0.1, bounds=bounds)

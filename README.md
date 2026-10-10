@@ -5,7 +5,8 @@
   <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
 </p>
 
-# Clonal Selection Algorithm for Function Optimization
+# Đồ án môn học: Tính Toán Thông Minh (Computational Intelligence)
+### Chủ đề: Clonal Selection Algorithm for Function Optimization
 
 ## 📝 Giới thiệu đề tài
 Đề tài áp dụng **Thuật toán lựa chọn dòng vô tính (Clonal Selection Algorithm)** để giải quyết bài toán tối ưu hóa (tìm Min/Max) trên các hàm chuẩn (benchmark functions) như hàm **Sphere** và **Rastrigin**.
