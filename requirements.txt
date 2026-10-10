@@ -1,6 +1,4 @@
 numpy
 matplotlib
-jupyter
 pygad
-seaborn
 tqdm
