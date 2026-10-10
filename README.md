@@ -84,3 +84,9 @@ Trong máy tính, chúng ta không có virus thật, mà thay vào đó là **B�
    ```bash
    python src/statistics.py
    ```
+
+## 📚 Tài liệu tham khảo
+1. **Hướng dẫn DataCamp về Artificial Immune System với phần Clonal Selection trong Python:** 
+   [https://www.datacamp.com/tutorial/artificial-immune-system](https://www.datacamp.com/tutorial/artificial-immune-system)
+2. **Repo GitHub triển khai Clonal Selection Algorithm bằng Python và Jupyter:** 
+   [https://github.com/christianrfg/clonalg](https://github.com/christianrfg/clonalg)
