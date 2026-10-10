@@ -8,6 +8,12 @@
 # Đồ án môn học: Tính Toán Thông Minh (Computational Intelligence)
 ### Chủ đề: Clonal Selection Algorithm for Function Optimization
 
+**👥 Nhóm thực hiện:**
+- Chế Văn Nam
+- Hồ Minh Khuyến
+- Nguyễn Thành Nhân
+- Lý Nguyễn
+
 ## 📝 Giới thiệu đề tài
 Đề tài áp dụng **Thuật toán lựa chọn dòng vô tính (Clonal Selection Algorithm)** để giải quyết bài toán tối ưu hóa (tìm Min/Max) trên các hàm chuẩn (benchmark functions) như hàm **Sphere** và **Rastrigin**.
 
